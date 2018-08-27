@@ -33,7 +33,7 @@ function forkRepo() {
   };
   console.log("this updates");
   //use fetch to fork it!
-  fetch("https://api.github.com/repos/"+repo+"/forks", {
+  fetch("https://api.github.com/repos/" + repo + "/forks", {
     method: 'post',
     headers:{
       Authorization: `token ${getToken()}`
